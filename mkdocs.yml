@@ -1,0 +1,108 @@
+site_name: FDE Course
+site_description: Forward Deployment Engineer curriculum
+site_url: https://hashai.github.io/FDE-Course/
+repo_url: https://github.com/hashAI/FDE-Course
+repo_name: hashAI/FDE-Course
+edit_uri: edit/main/
+
+docs_dir: docs
+site_dir: site
+
+exclude_docs: |
+  /Part1-Technical/A-Python/README.md
+  /Part1-Technical/C-Integration/README.md
+  /Part1-Technical/D-DevOps/README.md
+  /Part1-Technical/F-Observability/README.md
+  /Part1-Technical/H-AI-LLM/README.md
+  /Part1-Technical/I-Data/README.md
+  /Part3-Non-Technical/README.md
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: README.md
+  - Part 1 — Technical:
+      - A — Python:
+          - "01 — Async/Await": Part1-Technical/A-Python/01-async-await.md
+          - "02 — Pydantic & Type Hints": Part1-Technical/A-Python/02-pydantic-type-hints.md
+          - "03 — pytest": Part1-Technical/A-Python/03-pytest-testing.md
+          - "04 — Error Handling": Part1-Technical/A-Python/04-error-handling.md
+          - "05 — Packaging (uv & Poetry)": Part1-Technical/A-Python/05-packaging-uv-poetry.md
+      - C — Integration:
+          - "01 — REST, GraphQL & Webhooks": Part1-Technical/C-Integration/01-rest-graphql-webhooks.md
+          - "02 — Auth Flows": Part1-Technical/C-Integration/02-auth-flows.md
+          - "03 — Resilience Patterns": Part1-Technical/C-Integration/03-resilience-patterns.md
+          - "04 — Data Mapping": Part1-Technical/C-Integration/04-data-mapping-transformation.md
+      - D — DevOps:
+          - "01 — Docker": Part1-Technical/D-DevOps/01-docker.md
+          - "02 — CI/CD (GitHub Actions)": Part1-Technical/D-DevOps/02-cicd-github-actions.md
+          - "03 — Environment Separation": Part1-Technical/D-DevOps/03-env-separation.md
+          - "04 — Secrets & Config": Part1-Technical/D-DevOps/04-secrets-config.md
+      - F — Observability:
+          - "01 — Structured Logging": Part1-Technical/F-Observability/01-structured-logging.md
+          - "02 — Distributed Tracing": Part1-Technical/F-Observability/02-distributed-tracing-otel.md
+          - "03 — Metrics & Grafana": Part1-Technical/F-Observability/03-metrics-prometheus-grafana.md
+      - H — AI / LLM:
+          - "01 — LLM API & Prompts": Part1-Technical/H-AI-LLM/01-llm-api-prompt-engineering.md
+          - "02 — Tool Calling": Part1-Technical/H-AI-LLM/02-tool-calling.md
+      - I — Data:
+          - "01 — SQL Fluency": Part1-Technical/I-Data/01-sql-fluency.md
+          - "02 — ETL & ELT": Part1-Technical/I-Data/02-etl-elt.md
+  - Part 3 — Non-Technical:
+      - "01 — Problem Decomposition": Part3-Non-Technical/01-decomposition.md
+      - "02 — Story Bank": Part3-Non-Technical/02-story-bank.md
+
+plugins:
+  - search
+
+validation:
+  unrecognized_links: ignore
+  omitted_files: ignore
+  absolute_links: ignore
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hashAI/FDE-Course

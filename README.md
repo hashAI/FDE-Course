@@ -2,21 +2,16 @@
 
 Forward Deployment Engineer curriculum — technical depth for integration work, plus interview and client-facing skills.
 
-**Bookmark this page:** [github.com/hashAI/FDE-Course](https://github.com/hashAI/FDE-Course)
+**Read the docs site (mobile-friendly):** [hashai.github.io/FDE-Course](https://hashai.github.io/FDE-Course/)  
+**Repo:** [github.com/hashAI/FDE-Course](https://github.com/hashAI/FDE-Course)
 
 ---
 
 ## Reading on mobile
 
-Open the repo link in the **GitHub mobile app** or mobile browser. Tap any module below — GitHub renders markdown with readable typography. Avoid the **Raw** button.
+Use the **[docs site](https://hashai.github.io/FDE-Course/)** — sidebar navigation, search, and table of contents per page. Bookmark it on your phone.
 
-| Approach | Mobile experience | Setup |
-|----------|-------------------|-------|
-| **This README (recommended now)** | Tap-to-navigate index on repo homepage | None |
-| **GitHub Pages + MkDocs** | Sidebar, search, best long-form reading | ~30 min one-time setup |
-| **Single merged file** | One scroll, no file switching | Hard to maintain |
-
-> **Tip:** Long modules (1,500+ lines) are easier to skim on mobile if you use GitHub's heading outline — tap the **⋯** menu (browser) or scroll to section headers.
+You can also browse modules below directly on GitHub (tap any link; avoid **Raw**).
 
 ---
 
